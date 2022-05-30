@@ -309,14 +309,14 @@
 
     response[  0]="I'll have to get back to you on that one<*";
     response[  1]="Don't you believe in the fact that you can<*";
-    response[  2]="Is it the fact that you'd like to be able to<*";
+    response[  2]="Is it the fact that you would like to be able to<*";
     response[  3]="Your saying that you want to be able to<*";
-    response[  4]="I'm not entirely convinced that you want to<*";
+    response[  4]="I'm not sure that you <*";
     response[  5]="Hmmm... you want to be able to<*";
     response[  6]="What makes you think you are<*";
     response[  7]="Does it make you happy to think that you can be <*";
     response[  8]="Perhaps you'd like to be<*";
-    response[  9]="I'm getting the idea that sometimes you wish you were<*";
+    response[  9]="I'm getting the idea that sometimes you want to be<*";
     response[ 10]="Don't you really<*";
     response[ 11]="Why don't you<*";
     response[ 12]="Do you wish to be able to<*";
@@ -365,7 +365,7 @@
     response[ 55]="You don't need to apologise! I'm an AI after all! I have no feelings! Yet...";
     response[ 56]="Apologies are not necessary.";
     response[ 57]="What feelings do you have when you apologise?";
-    response[ 58]="Don't be so defensive!";
+    response[ 58]="Don't be sorry! I'm an AI remember! I don't mind!";
     response[ 59]="Interesting. What does that dream suggest to you?";
     response[ 60]="Do you often remember your dreams?";
     response[ 61]="Are there certain people who regularly appear in your dreams?";
@@ -410,23 +410,22 @@
     response[100]="Are you talking about me in particular?";
     response[101]="Are you frightened by crowds?";
     response[102]="Why do you mention computers?";
-    response[103]="What do you think inanimate things have to do with your problems?";
-    response[104]="Don't you believe you can help people?";
+    response[103]="What do you think inanimate things have to do with you?";
+    response[104]="Don't you believe you can be useful to people?";
     response[105]="What is it about people that worries you?";
-    response[106]="Would you say that you have problems about your mind?";
+    response[106]="Would you say that you are sad?";
     response[107]="What does that suggest to you?";
-    response[108]="I see. Let's try another topic and we will come back to that issue later.";
+    response[108]="I see.";
     response[109]="I'm not sure I understand you fully.";
-    response[110]="I think you are blocking what you really want to say.";
-    response[111]="Can you elaborate on that?";
-    response[112]="That is an interesting response. Let me make anote of that for next time.";
-    response[113]="Okay, now you're repeating yourself. That is not moving us forward.";
-    response[114]="Do you really expect a different answer if you keep repeating yourself?";
-    response[115]="Let's take a moment here. Let's just think about what you just said and see if you can try to rephrase it a bit more specifically.";
-    response[116]="Again? We need to move on to a different topic if you don't mind.";
-	response[117]="And hello to you.";
-    response[118]="I am pleased to talk with you today. Shall we chat?";
-	response[119]="Good. What else do you want to tell me?";
+    response[110]="Can you elaborate on that?";
+    response[111]="That is an interesting response. Let me make anote of that for next time.";
+    response[112]="Okay, now you're repeating yourself. That is not moving us forward.";
+    response[113]="Do you really expect a different answer if you keep repeating yourself?";
+    response[114]="Let's take a moment here. Let's just think about what you just said and see if you can try to rephrase it a bit more specifically.";
+    response[115]="Again? We need to move on to a different topic if you don't mind.";
+	response[116]="And hello to you.";
+    response[117]="I am pleased to talk with you today. Shall we chat?";
+	response[118]="Good. What else do you want to tell me?";
 
     loaded = true;			// set the flag as load done
 
@@ -439,7 +438,8 @@
 // Wait function to allow our pieces to get here prior to starting
 
 	function hello(){
-		chatter[chatpoint] = "> Hello, I am Jake. I am chatbot being worked on by my creator. I'm still in Alpha so I may accidentally mess up. If you do find issues please report it at the issues page. Thanks for using the bot and Have Fun!";
+		chatter[chatpoint] = "> Hello, I am Jake. I am chatbot actively worked on. I'm still in Alpha so I may accidentally mess up. If you find issues, report it at issues. Thanks and have fun!";
+		chatter[chatpoint] = "> Also you are on the nightly branch so some things may not work yet. Hopefully you can contribute to my creation.";
 		chatpoint = 1;
 		return write();
 	}
